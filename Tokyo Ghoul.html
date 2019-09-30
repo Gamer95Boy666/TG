@@ -34,12 +34,6 @@
             height: 700px;
         }
 
-        .parallax3 {
-            background: url(https://images4.alphacoders.com/822/thumb-1920-822181.png) no-repeat center;
-            background-size: cover;
-            background-attachment: fixed;
-            height: 700px;
-        }
 
         body {
             background-image: url(http://starkovtattoo.spb.ru/images/700/DSC100708288.png);
@@ -52,6 +46,100 @@
             text-align: center;
             font-size: 30px;
         }
+
+
+        .nav-main {
+            position: fixed;
+            top: 0;
+            width: 20%;
+            height: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 1000;
+        }
+
+        .btn-toggle-nav {
+            width: 50px;
+            height: 100%;
+            background-color: orangered;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png);
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .btn-toggle-nav:hover {
+            opacity: 0.5;
+        }
+
+        .nav-main ul {
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 60px;
+        }
+
+        .nav-main ul li {
+            list-style: none;
+            line-height: 0px;
+        }
+
+        .nav-main ul li a {
+            display: block;
+            height: 100%;
+            padding: 0 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgb(73, 12, 12);
+            font-family: Arial;
+            font-size: 60px;
+        }
+
+        .nav-sidebar {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: calc(100vh - 60px);
+            padding: 0 5px;
+            background-color: #4b0f0f;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-sidebar ul {
+            padding-top: 15px;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        .nav-sidebar ul li {
+            line-height: 60px;
+            list-style: none;
+        }
+
+        .nav-sidebar ul li span,
+        .nav-sidebar ul li a {
+            display: block;
+            height: 60px;
+            padding: 0 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #FFF;
+            font-family: Arial;
+            font-size: 16px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-sidebar ul li a:hover {
+            background-color: #222;
+        }
+
+
 
         a {
             color: palevioletred;
@@ -134,6 +222,23 @@
 </head>
 
 <body>
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <ul>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Link's</span></li>
+            <li><a href="https://www.youtube.com/watch?v=KBSsrFLn6SE" target="_blank">Tokyo Ghoul-Unravel</a></li>
+            <li><a href="https://www9.gogoanime.io/category/tokyo-ghoul" target="_blank">Tokyo Ghoul Episode 1</a></li>
+            <li><a href="https://wall.alphacoders.com/by_sub_category.php?id=226985&name=Tokyo+Ghoul+Wallpapers" target="_blank">Tokyo Ghoul Img</a></li>
+            <li><a href="file:///C:/Users/Pascal%20Heggheim/Desktop/Tokyo%20Ghoul/tokyo%20ghoul%20bilder.html" target="_blank">Characters</a></li>
+            <li><a href="#" target="_blank">Gallary</a></li>
+        </ul>
+    </aside>
     <div class="container">
         <div class="overview-intro">
 
@@ -174,9 +279,7 @@
     </div><!-- /.row -->
     </div><!-- /.intro-reveal -->
     </div>
-
     <div class="parallax">
-
     </div>
     <div class="overview-intro">
         <div class="container">
@@ -232,168 +335,10 @@
         <div class="container">
 
 
-            <script>
-                var num1 = 5;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Ken Kaneki</h2>
-            <img src="http://images6.fanpop.com/image/photos/40000000/IMG-0510-JPG-ken-kaneki-40041531-600-365.jpg">
-            <p>
-                Ken Kaneki (金木研, Kaneki Ken)<br />
-                is an one-eyed ghoul,<br />
-                who is currently living under the identity of<br />
-                Haise Sasaki (佐々木琲世, Sasaki Haise)<br />
-                the First Rank Ghoul Investigator<br />
-                also known as Eyepatch (眼帯, Gantai).<br />
-            </p>
-
-            <script>
-                var num1 = 6;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Shuu Tsukiyama</h2>
-            <img src="http://images6.fanpop.com/image/photos/42800000/Shuu-Tsukiyama-yui1234-42825664-739-465.jpg">
-            <p>
-                Shuu Tsukiyama (月山 習, Tsukiyama Shū)<br />
-                is the infamous Gourmet (美食家) ghoul.<br />
-                He is a fourth-year student studying<br />
-                Social Welfare at<br />
-                the Department of Human<br />
-                Sciences at Seinan Gakuin University.<br />
-            </p>
-
-            <script>
-                var num1 = 7;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Rize Kamishiro</h2>
-            <img
-                src="https://steamuserimages-a.akamaihd.net/ugc/963090736882229328/4D32567F655643E05BE62DE79BA07A4B746BD732/">
-            <p>
-                Rize Kamishiro (神代利世, Kamishiro Rize)<br />
-                is a strange women now stop reading this IDIOT,<br />
-                who is currently held captive in Professor Kanō's<br />
-                laboratory and used to create artificial one-eyed ghouls.<br />
-                When she set her eyes on Ken Kaneki, Rize,<br />
-                moments before eating him, was injured<br />
-                in an accident, which was caused by Sōta<br />
-                a member of the Clowns<br />
-                and her organs were transplanted into her potential victim,<br />
-                Ken Kaneki, which turned him into a half-ghoul.<br />
-                Rize is known under her alias Big-Eater<br />
-                (大喰い, Ōkui), due to her extensive eating habits.<br />
-            </p>
-
-            <script>
-                var num1 = 8;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Juuzou Suzuya</h2>
-            <img src="http://pm1.narvii.com/6459/da535d12270936ee1bb38a5b70a9c6322ef0ff82_00.jpg">
-            <p>
-                Juuzou Suzuya (鈴屋 什造, Suzuya Jūzō)<br />
-                is a Special Class Ghoul Investigator.<br />
-                In the past, he went by the name Rei Suzuya (鈴屋 玲, Suzuya Rei).<br />
-                He was first partnered with Yukinori Shinohara,<br />
-                and is now currently the leader of Suzuya Squad.<br />
-            </p>
-
-            <script>
-                var num1 = 9;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Ayato Kirishima</h2>
-            <img
-                src="https://anime.amigurumix.com/wp-content/uploads/2019/05/6ad9978bb0fbd19bbc31d303cf57e1b8--tokyo-ghoul-ayato-hot-ayato-kirishima-hot.jpg">
-            <p>
-                Ayato Kirishima (霧嶋 絢都, Kirishima Ayato)<br />
-                is Touka Kirishima's younger brother,<br />
-                and goes by the alias Black Rabbit.<br />
-                He grew up with his sister in the 20th ward<br />
-                but at some point in time, he left the district.<br />
-                According to Kazuichi Banjou, Ayato subsequently began to<br />
-                wander all the wards of Tokyo, bringing sheer wreckage<br />
-                and chaos upon them, until his unique powers and abilities caught Tatara’s eye.<br />
-                Ayato was therefore pulled into joining Aogiri Tree,<br />
-                where he is currently an Executive.<br />
-            </p>
-
-            <script>
-                var num1 = 10;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Touka Kirishima</h2>
-            <img src="https://pbs.twimg.com/profile_images/577557694753697792/l1lFpOig_400x400.jpeg">
-            <p>
-                Touka Kirishima (霧嶋 董香, Kirishima Touka)<br />
-                is a ghoul and ex-waitress at Anteiku.<br />
-                She is also the wife of Ken Kaneki<br />
-                and the mother of Ichika Kaneki.<br />
-            </p>
-
-            <script>
-                var num1 = 11;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Fueguchi, Hinami</h2>
-            <img src="https://thumbs.gfycat.com/UnfortunateHarmfulAustraliansilkyterrier-small.gif">
-            <p>
-                Hinami Fueguchi (笛口 雛実, Fueguchi Hinami)<br />
-                is a ghoul whose parents, Asaki and Ryouko Fueguchi,<br />
-                were killed by ghoul investigators.<br />
-                After the event she began to share strong<br />
-                pseudo-sibling relationships with both Ken Kaneki and Touka Kirishima.<br />
-                The CCG held insufficient information about Hinami,<br />
-                and therefore failed in eliminating her.<br />
-                She was known as subject Number 745 or Daughter in their files.<br />
-                Later, she joined Kaneki's group of ghouls.<br />
-            </p>
-
-            <script>
-                var num1 = 12;
-                var num2 = 4;
-                var total = num1 - num2;
-                document.write(total);
-            </script>
-            <h2>Ichika Kaneki</h2>
-            <img src="https://pbs.twimg.com/profile_images/1076636464937455616/lpzwpNoP_400x400.jpg">
-            <p>
-                Ichika Kaneki (金木 一花, Kaneki Ichika)<br />
-                is the daughter of Ken Kaneki and<br />
-                Touka Kirishima, who appears in<br />
-                the finale of Tokyo Ghoul:re.<br />
-            </p>
-
-            <div class="parallax3">
-                <div class="youtube">
-                    <h3>Tokyo-Ghoul<br /></h3><span style='font-size: 50px;'>&#10147;</span>
-                    <a href="https://www.youtube.com/watch?v=KBSsrFLn6SE" target="_blank">Tokyo Ghoul - Unravel
-                        &#9835;</a><br /><span style='font-size: 50px;'></span>
-                    <h3>gogoanime<br /></h3><span style='font-size: 50px;'>&#10147;</span>
-                    <a href="https://www9.gogoanime.io/category/tokyo-ghoul" target="_blank">Tokyo Ghoul Episode 1
-                        頵</a><br /><span style='font-size: 50px;'></span>
-                    <h3>Wallpapers</h3><span style='font-size: 50px;'>&#10147;</span>
-                    <a href="https://wall.alphacoders.com/by_sub_category.php?id=226985&name=Tokyo+Ghoul+Wallpapers"
-                        target="_blank">981 Tokyo Ghoul Wallpapers</a><br /><span style='font-size: 50px;'></span>
-                </div>
-            </div>
-            <h1>Images</h1>
-
             <!-- Photo Grid -->
+            <h1>Blider</h1>
+            <a href="file:///C:/Users/Pascal%20Heggheim/Desktop/Tokyo%20Ghoul/tokyo%20ghoul%20bilder.html"
+                target="_blank">Tokyo Ghoul: Caracters</a>
             <div class="row">
                 <div class="column">
                     <img src="https://giffiles.alphacoders.com/132/13246.gif" style="width: 100%">
@@ -439,10 +384,8 @@
                     <img src="https://mfiles.alphacoders.com/798/798745.jpg" style="width: 100%">
                     <img src="https://artfiles.alphacoders.com/102/102919.jpg" style="width: 100%">
                 </div>
-                <p>
-
-                </p>
 
 </body>
+<script src="main.js"></script>
 
 </html>
