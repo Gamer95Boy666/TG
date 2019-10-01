@@ -24,7 +24,7 @@
         }
 
         .parallax2 {
-            background: url(https://images6.alphacoders.com/632/thumb-1920-632827.png) no-repeat center;
+            background: url(https://wallpaperaccess.com/full/175755.jpg) no-repeat center;
             background-size: cover;
             background-attachment: fixed;
             height: 350px;
@@ -37,7 +37,7 @@
         }
 
         body {
-            background-image: url(https://images2.alphacoders.com/772/thumb-1920-772213.jpg);
+            background-image: url(https://66.media.tumblr.com/049cfc92392b16b88c8eede596192feb/tumblr_nm5ba9JXRV1unbsixo3_500.gif);
             object-fit: contain;
             background-attachment: fixed;
             background-position: center;
@@ -45,7 +45,7 @@
             background-size: cover;
             counter-reset: section;
             text-align: center;
-            font-size: 30px;
+            font-size: 25px;
         }
 
 
@@ -62,7 +62,7 @@
         .btn-toggle-nav {
             width: 65px;
             height: 100%;
-            background-color: rgba(128, 128, 128, 0);
+            background-color: rgba(255, 255, 255, 0.397);
             background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png);
             background-repeat: no-repeat;
             background-size: 90%;
@@ -100,12 +100,13 @@
 
         .nav-sidebar {
             position: fixed;
+            font-weight: bold;
             left: 0;
             bottom: 0;
             width: 50px;
             height: calc(100vh - 60px);
             padding: 0 5px;
-            background-color: rgba(255, 72, 0, 0);
+            background-color: rgba(0, 0, 0, 0);
             z-index: 1000;
             transition: all 1.5s ease-in-out;
         }
@@ -128,7 +129,7 @@
             padding: 0 10px;
             text-decoration: none;
             text-transform: uppercase;
-            color: black;
+            color: rgb(255, 255, 255);
             font-family: Arial;
             font-size: 16px;
             white-space: nowrap;
@@ -142,12 +143,13 @@
 
         a {
             color: palevioletred;
-            text-shadow: 1px 1px black;
+            text-shadow: 0.5px 0.5px rgb(255, 0, 0);
+            font-weight: bold;
         }
 
         p {
-            color: black;
-            text-shadow: 1px 1px black;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px rgba(38, 0, 255, 0.363);
             font-weight: bold;
         }
 
@@ -156,15 +158,6 @@
             text-shadow: 1px 1px red;
         }
 
-        h2 {
-            color: black;
-            text-shadow: 1px 1px red;
-        }
-
-        h3 {
-            color: rgb(187, 53, 0);
-            text-shadow: 5px 5px 20px palevioletred;
-        }
 
         div {
             color: aliceblue;
@@ -222,7 +215,7 @@
 
 <body>
     <nav class="nav-main">
-        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <div class="btn-toggle-nav" onclick="toggleNav(this)"></div>
         <ul>
 
         </ul>
