@@ -62,13 +62,23 @@
 </head>
 
 <body>
+    <script>
+        function doSomething(etNavnDuVelgerSelv) {
+            // Nå er etNavnDuVelgerSelv det samme som om vi hadde kjørt:
+            // var etNavnDuVelgerSelv = document.getElementById('1');
+            // eller
+            // var etNavnDuVelgerSelv = document.getElementById('2');
+            // HVIS og bare hvis du trykker på akkurat det elementet som har id=z
+            etNavnDuVelgerSelv.innerHTML = 'Ken Kaneki';
+        }
+    </script>
 
     <div class="row"></div>
     <div class="wrapper">
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/827/thumb-82734.jpg" />
         <div>
-            <h2>Ken Kaneki</h2>
+            <h2 id="1" onclick="doSomething(this)">?????????</h2>
             <p class="test">
                 Ken Kaneki (金木研, Kaneki Ken)<br />
                 is an one-eyed ghoul,<br />
@@ -82,15 +92,15 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/465/thumb-46569.png" />
         <div>
-            <h2>Juuzou Suzuya</h2>
-            <p class="test">
+            <h2 id="2" onclick="doSomething(this)">Juuzou Suzuya </h2>
+            <p class=" test">
                 Juuzou Suzuya (鈴屋 什造, Suzuya Jūzō)<br />
                 is a Special Class Ghoul Investigator.<br />
                 In the past, he went by the name Rei Suzuya<br />
                 (鈴屋 玲, Suzuya Rei).<br />
                 He was first partnered with Yukinori Shinohara,<br />
                 and is now currently the leader of Suzuya Squad.<br />
-            </p>
+                </p>
         </div>
 
         <div></div>
