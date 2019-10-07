@@ -64,12 +64,52 @@
 <body>
     <script>
         function doSomething(etNavnDuVelgerSelv) {
-            // Nå er etNavnDuVelgerSelv det samme som om vi hadde kjørt:
-            // var etNavnDuVelgerSelv = document.getElementById('1');
-            // eller
-            // var etNavnDuVelgerSelv = document.getElementById('2');
-            // HVIS og bare hvis du trykker på akkurat det elementet som har id=z
-            etNavnDuVelgerSelv.innerHTML = 'Ken Kaneki';
+            console.log("id til psrsmeter" + etNavnDuVelgerSelv.id);
+            if (etNavnDuVelgerSelv.id == "1") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Ken Kaneki';
+            }
+
+            if (etNavnDuVelgerSelv.id == "2") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Juuzou Suzuya';
+            }
+
+            if (etNavnDuVelgerSelv.id == "3") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Fueguchi, Hinami';
+            }
+
+            if (etNavnDuVelgerSelv.id == "4") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Shuu Tsukiyama';
+            }
+
+            if (etNavnDuVelgerSelv.id == "5") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Ayato Kirishima';
+            }
+
+            if (etNavnDuVelgerSelv.id == "6") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Ichika Kaneki';
+            }
+
+            if (etNavnDuVelgerSelv.id == "7") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Rize Kamishiro';
+            }
+
+            if (etNavnDuVelgerSelv.id == "8") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Touka Kirishima';
+            }
+
+            if (etNavnDuVelgerSelv.id == "9") {
+                console.log("this is running");
+                etNavnDuVelgerSelv.innerHTML = 'Hideyoshi Nagachika';
+            }
+
         }
     </script>
 
@@ -78,7 +118,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/827/thumb-82734.jpg" />
         <div>
-            <h2 id="1" onclick="doSomething(this)">?????????</h2>
+            <h2 id="1" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Ken Kaneki (金木研, Kaneki Ken)<br />
                 is an one-eyed ghoul,<br />
@@ -92,7 +132,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/465/thumb-46569.png" />
         <div>
-            <h2 id="2" onclick="doSomething(this)">Juuzou Suzuya </h2>
+            <h2 id="2" onclick="doSomething(this)">Click me</h2>
             <p class=" test">
                 Juuzou Suzuya (鈴屋 什造, Suzuya Jūzō)<br />
                 is a Special Class Ghoul Investigator.<br />
@@ -100,13 +140,13 @@
                 (鈴屋 玲, Suzuya Rei).<br />
                 He was first partnered with Yukinori Shinohara,<br />
                 and is now currently the leader of Suzuya Squad.<br />
-                </p>
+            </p>
         </div>
 
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/140/thumb-140354.jpg">
         <div>
-            <h2>Fueguchi, Hinami</h2>
+            <h2 id="3" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Hinami Fueguchi (笛口 雛実, Fueguchi Hinami)<br />
                 is a ghoul whose parents, Asaki and Ryouko Fueguchi,<br />
@@ -120,7 +160,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/166/thumb-166595.png" />
         <div>
-            <h2>Shuu Tsukiyama</h2>
+            <h2 id="4" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Shuu Tsukiyama (月山 習, Tsukiyama Shū)<br />
                 is the infamous Gourmet (美食家) ghoul.<br />
@@ -134,7 +174,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/156/thumb-156879.jpg" />
         <div>
-            <h2>Ayato Kirishima</h2>
+            <h2 id="5" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Ayato Kirishima (霧嶋 絢都, Kirishima Ayato)<br />
                 is Touka Kirishima's younger brother,<br />
@@ -148,7 +188,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/178/thumb-178752.png">
         <div>
-            <h2>Ichika Kaneki</h2>
+            <h2 id="6" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Ichika Kaneki<br />
                 (金木 一花, Kaneki Ichika)<br />
@@ -163,7 +203,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/723/thumb-72391.png" />
         <div>
-            <h2>Rize Kamishiro</h2>
+            <h2 id="7" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Rize Kamishiro<br />
                 (神代利世, Kamishiro Rize)<br />
@@ -178,7 +218,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/459/thumb-45921.jpg">
         <div>
-            <h2>Touka Kirishima</h2>
+            <h2 id="8" onclick="doSomething(this)">Click me</h2>
             <p class="test">
                 Touka Kirishima<br />
                 (霧嶋 董香, Kirishima Touka)<br />
@@ -192,7 +232,7 @@
         <div></div>
         <img src="https://avatarfiles.alphacoders.com/982/thumb-98289.png" />
         <div>
-            <h2>Hideyoshi Nagachika</h2>
+            <h2 id="9" onclick="doSomething(this)">Click me</h2>
             <p>
                 Hideyoshi Nagachika<br />
                 (永近 英良, Nagachika Hideyoshi)<br />
